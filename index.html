@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <script src="./index.js"></script>
+
+</head>
+
+<body class="font-poppins">
+    <!-- Wrapper >> margin =  -->
+    <div class="m-5 md:mx-12 lg:mx-24">
+        <!-- Header -->
+        <header class="flex items-center justify-between">
+            <!-- Left Side -->
+            <div class="flex items-center space-x-8">
+                <img src="./images/logo.svg" alt="shortly logo">
+                <nav class="space-x-8 font-medium text-neutralGrayishViolet text-sm hidden md:inline-flex items-center">
+                    <a class="hover:text-neutralDarkViolet transition duration-200" href="#">Features</a>
+                    <a class="hover:text-neutralDarkViolet transition duration-200" href="#">Pricing</a>
+                    <a class="hover:text-neutralDarkViolet transition duration-200" href="#">Resources</a>
+                </nav>
+            </div>
+
+            <!-- Right Side -->
+            <div class="space-x-8 text-sm hidden md:inline-flex items-center">
+                <button
+                    class="font-medium text-neutralGrayishViolet hover:text-neutralDarkViolet transition duration-200">Login</button>
+                <button
+                    class="bg-primaryCyan hover:bg-primaryCyan/50 text-white px-4 py-2 rounded-full font-semibold transition duration-200 active:scale-125">Sign
+                    Up</button>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger hamburger__active space-y-1 md:hidden cursor-pointer">
+                <div class="w-5 h-0.5 bg-neutralDarkViolet"></div>
+                <div class="w-5 h-0.5 bg-neutralDarkViolet"></div>
+                <div class="w-5 h-0.5 bg-neutralDarkViolet"></div>
+            </div>
+        </header>
+    </div>
+</body>
+
+</html>
